@@ -1,0 +1,4 @@
+!tab = Skeleton HTML code
+html:5 = skelton html code
+shift+alt+down = copy line above
+control = comment

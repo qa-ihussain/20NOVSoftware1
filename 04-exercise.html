@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <p>Getting user information, use it and store it, sent to a server for processing</p>
+    <fieldset>
+        <legend>Your details:</legend>
+        <form method="POST" action="index.html"></form>
+        <label>Enter your full name:</label>
+        <input type="text" name="Name" placeholder="Enter name" />
+        <p><label>Enter your email:</label>
+            <input type="email" name="Email" placeholder="Enter email" />
+        </p>
+        <p><label>Enter your password:</label>
+            <input type="password" name="Password" placeholder="Password" />
+        </p>
+        <p><label>Gender</label>
+            <select id="gender" name="Gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Non-binary</option>
+                <option>Prefer not to say</option>
+            </select>
+        </p>
+        <p><label>Enter your phone number:</label>
+            <input type="tel" placeholder="Enter your phone number" />
+        </p>
+        <p><label>Enter your date of birth</label>
+            <input type="date" name="DOB" />
+        </p>
+        <p><label>Credit/Debit Card Number</label>
+            <input type="text" name="Credit/Debit Number" pattern="[0-9]{13,16}" />
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>User Preferences:</legend>
+        <p><label>Are you happy?</label>
+            <input type="checkbox" />Yes</input>
+            <input type="checkbox" />Somewhat</input>
+            <input type="checkbox" />No</input>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Extras:</legend>
+        <textarea rows="10" cols="50" maxlegnth="50">
+            Enter address here:
+        </textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</body>
+
+</html>
+</head>
