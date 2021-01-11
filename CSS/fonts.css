@@ -1,0 +1,17 @@
+/* element {property:value;} */
+
+
+/* # = id */
+
+
+/* .  = class */
+
+# #Fantasy {
+    font-family: fantasy;
+}
+
+p#Cursive {
+    font-family: cursive;
+    text-shadow: 3px 3px 5px purple;
+    margin: 50px 50px 50px 50px;
+}
