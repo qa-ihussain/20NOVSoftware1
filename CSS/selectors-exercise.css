@@ -1,0 +1,34 @@
+/* Descendent combinator: more specific */
+
+em {
+    color: blue;
+}
+
+
+/* Direct child */
+
+p em {
+    color: red;
+}
+
+
+/* Adjacent-sibling combinator */
+
+h1+p {
+    color: limegreen;
+}
+
+
+/* all siblings */
+
+h1~p {
+    color: purple;
+    background-color: grey;
+}
+
+
+/* hover -- pseduo class */
+
+p.hover:hover {
+    background-color: yellow;
+}

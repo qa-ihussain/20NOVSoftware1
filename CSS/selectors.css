@@ -1,0 +1,28 @@
+#myHeading {
+    font-size: 50px;
+}
+
+.center {
+    text-align: center;
+    color: crimson
+}
+
+
+/* * = everything*/
+
+
+/* { 
+    text-align: end;
+    color: blue;
+    font-size: 50px;
+} */
+
+
+/* Decendant slector - all descendants will be styled */
+
+ol li {
+    color: magenta;
+}
+
+
+/* Child selectors - used with > any direct child will be styled */

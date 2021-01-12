@@ -1,0 +1,47 @@
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: black;
+}
+
+
+/* Choosing elements based on their attribute */
+
+
+/* Selector = looks for EXACT value match */
+
+img[src="#"] {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ^= =Starts with this value */
+
+a[href^="http"] {
+    color: blue;
+}
+
+
+/* $= = Ending with */
+
+[src$=".png"] {
+    height: 500px;
+}
+
+
+/*  *= Contains a value */
+
+[id*="stuff"] {
+    color: azure;
+}
