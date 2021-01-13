@@ -38,3 +38,18 @@ promprom.then((message) => {
 }).then(() => {
     console.log(`I will take place regardless of what happened before!`);
 });
+
+let aNewPromise = new Promise((resolve, reject) => {
+    console.log(`intial`);
+    resolve();
+    reject(); //unreachable
+}).then(() => {
+    throw new Error(`Something has failed`); // Throws error
+    console.log(`Do this`); // unreachable code
+}).then(() => {
+    console.log(`Do this after whatever happened before`);
+}).catch((message) => {
+    console.log(`Catches ${message}`);
+});
+
+// aNewPromise();
