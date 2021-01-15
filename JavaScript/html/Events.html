@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div class="d1">1
+        <div class="d2">2
+            <div class="d3" id="d3">
+                3
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let divs = document.querySelectorAll('div');
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].addEventListener("click", function(e) {
+                console.log(e);
+                e.target.addEventListener.backgroundColor = "yellow";
+                alert(`class name = ${e.target.className}`);
+                divs[i].style.backgroundColor = "";
+                e.stopPropagation();
+            }, false); // true - capturing, false = bubbling
+            // addEventListener = "action", (), boolean
+        }
+    </script>
+
+</body>
+
+</html>
